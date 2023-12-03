@@ -18,9 +18,9 @@ const page = () => {
           <h1 className="text-xl md:text-2xl lg:text-2xl px-2 font-small">About Me</h1>
           <div className="text-sm md:text-md lg:text-lg  px-8 w-fit space-y-1">
           <p className={PTSans.className} >
-          I&apos;m <b className="">Gilbert Fuentes</b>, a 22-year-old juggling the college hustle while diving into the tech world. Spent some time messing around with Next.js, Laravel, and Other stuff - you know, the whole website-building thing.  I've got a soft spot for front-end and back-end tech too; it's like my digital playground. 
+          I&apos;m <b className="">Gilbert Fuentes</b>, a 22-year-old juggling the college hustle while diving into the tech world. Spent some time messing around with Next.js, Laravel, and Other stuff - you know, the whole website-building thing.  I&apos;ve got a soft spot for front-end and back-end tech too; it&apos;s like my digital playground. 
           </p>
-          <p className={PTSans.className}  >Beyond that, I also draw sometimes, though I'll admit, my motivation can be a bit hit or miss. And yeah, gaming is my go-to for kicking back and unwinding. </p>
+          <p className={PTSans.className}  >Beyond that, I also draw sometimes, though I&apos;ll admit, my motivation can be a bit hit or miss. And yeah, gaming is my go-to for kicking back and unwinding. </p>
           </div>
          
         </div>

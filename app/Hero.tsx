@@ -26,7 +26,7 @@ const Hero = () => {
             <h2
               className={`text-sm sm:text-md md:text-lg md:max-w-[87vh]   ${PTSans.className}`}
             >
-            I am a Web developer with backend and frontend development knowledge, currently focusing on mastering React and NextJS. I am based in Cebu, Philippines. I am a self-taught developer with a bachelor's degree in information technology.
+            I am a Web developer with backend and frontend development knowledge, currently focusing on mastering React and NextJS. I am based in Cebu, Philippines. I am a self-taught developer with a bachelor&apos;s degree in information technology.
             </h2>
             <div className=" space-x-3 mt-2 flex justify-center sm:justify-start">
               <Button asChild variant="outline">
