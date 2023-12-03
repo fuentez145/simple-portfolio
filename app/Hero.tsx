@@ -1,10 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-import { JosefinSans, PTSans } from "@/components/fonts/google";
+import {  PTSans } from "@/components/fonts/google";
 import { Button } from "@/components/ui/button";
-import { Github } from 'lucide-react';
-import { Linkedin } from 'lucide-react';
+
 import Link from "next/link";
 
 const Hero = () => {
@@ -26,6 +25,7 @@ const Hero = () => {
           <div className="mb-8 sm:mb-0">
             <Image
               src="/images/profile.jpg"
+              priority
               alt="My Profile"
               width={300}
               height={200}
