@@ -6,8 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { Instagram } from 'lucide-react';
-
+import { Mail } from 'lucide-react';
 import Link from "next/link";
 const page = () => {
   return (
@@ -17,7 +16,7 @@ const page = () => {
           <ul className="flex md:flex-col w-full md:w-fit p-5 gap-4   items-center justify-center   ">
             <li className="w-full">
               <Button variant="outline" asChild>
-                <Link className="w-full" href="#">
+                <Link className="w-full" target="_blank" href="https://github.com/fuentez145">
                   <Github />
                 </Link>
               </Button>
@@ -38,8 +37,8 @@ const page = () => {
             </li>
             <li className="w-full">
               <Button variant="outline" asChild>
-                <Link className="w-full" href="#">
-                  <Instagram />
+                <Link className="w-full" href="mailto:gilbertfuentes2001@gmail.com">
+                  <Mail />
                 </Link>
               </Button>
             </li>
@@ -65,7 +64,7 @@ const page = () => {
                 <Label htmlFor="message">Message</Label>
                 <Textarea id="message" placeholder="Let's talk about.." />
               </div>
-              <Button className="w-full">Send message</Button>
+              <Button className="w-full" >Send message</Button>
             </div>
           </div>
         </div>

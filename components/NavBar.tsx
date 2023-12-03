@@ -13,6 +13,7 @@ import clsx from "clsx";
 const CurrentPathnameStyle = (selectedpath : string ) => {
   const pathname = usePathname();
   const CurrentDIRClass = clsx( {
+    'bg-background' : pathname !== selectedpath,
     'bg-accent text-accent-foreground' : pathname === selectedpath ,
   })
 
