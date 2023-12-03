@@ -15,7 +15,7 @@ const page = () => {
         <div className=" md:w-[90%] space-y-3">
           <h1 className="text-2xl lg:text-2xl px-2 font-medium">About Me</h1>
           <p className=" lg:text-lg  px-8 w-fit">
-          Hello, I'm Houtaro, a dedicated Full Stack Developer driven by the passion for creating seamless digital experiences. I find joy in translating ideas into functional and user-friendly applications, blending creativity with new technolgies.
+          Hello, I&apos;m Gilbert, a dedicated Full Stack Developer driven by the passion for creating seamless digital experiences. I find joy in translating ideas into functional and user-friendly applications, blending creativity with new technolgies.
           </p>
         </div>
 

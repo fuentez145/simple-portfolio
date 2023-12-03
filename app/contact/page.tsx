@@ -45,8 +45,8 @@ const page = () => {
             </li>
           </ul>
           <div className="flex flex-col w-full items-center justify-center">
-            <h1 className="text-3xl mb-2">Let's Connect </h1>
-            <p className="text-sm p-5">I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <h1 className="text-3xl mb-2">Let&apos;s Connect </h1>
+            <p className="text-sm p-5">I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!</p>
             <Separator />
             <div className="w-full px-5 mt-8 space-y-5 ">
               <div>
