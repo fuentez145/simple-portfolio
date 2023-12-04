@@ -1,5 +1,5 @@
 import React from "react";
-import { project } from "./projects";
+import { project } from "../../components/data/projects";
 import Image from "next/image";
 
 const page = () => {

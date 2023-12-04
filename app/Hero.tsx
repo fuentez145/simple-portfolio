@@ -10,7 +10,7 @@ import HeroTitle from "@/components/HeroTitle";
 const Hero = () => {
   return (
     <div className="relative w-full h-screen ">
-      <div className="absolute flex mt-5 sm:mt-0 sm:items-center justify-center h-full  w-full px-10">
+      <div className="absolute flex mt-5 sm:mt-0 sm:items-center mt-8 sm:mt-0 justify-center h-full   w-full px-10">
         <div className="flex flex-col flex-col-reverse sm:flex-row  justify-around  w-full items-center lg:max-w-6xl sm:gap-10">
           <div className="flex-1   md:space-y-7 ">
             <h1
@@ -29,7 +29,7 @@ const Hero = () => {
             I am a Web developer with backend and frontend development knowledge, currently focusing on mastering React and NextJS. I am based in Cebu, Philippines. I am a self-taught developer with a bachelor&apos;s degree in information technology.
             </h2>
             <div className=" space-x-3 mt-2 flex justify-center sm:justify-start">
-              <Button asChild variant="outline">
+              <Button asChild variant="outline" >
                 <Link href="/contact">Contact Me</Link>
               </Button>
               <Button variant="outline">

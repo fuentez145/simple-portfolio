@@ -1,9 +1,9 @@
 export const project = [
     {
-        title: "Project Title 1",
+        title: "CTU Forum System",
         description: "Project Description",
         link: "https://example.com",
-        image: "/images/2.jpg",
+        image: "/images/ctuforumsystem.png",
     },
     {
         title: "Project Title 2",

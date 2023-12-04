@@ -10,13 +10,14 @@ import { SiMysql } from "react-icons/si";
 import { PTSans } from "@/components/fonts/google";
 import { SiLaravel } from "react-icons/si";
 
-const page = () => {
+const About = () => {
   return (
-    <div className="relative w-full sm:h-screen lg:max-w-7xl lg:px-10 lg:mx-auto sm:pt-20 md:pt-20 lg:pt-0">
-      <div className="absolute  flex flex-col  lg:h-full  flex items-start justify-center space-y-9 p-2 ">
-        <div className=" md:w-[90%] space-y-3 ">
+    <div id="about" className="relative w-full h-fit sm:h-fit lg:h-screen min-h-screen max-w-7xl mx-auto ">
+      <div className="absolute flex mt-5 sm:mt-0 sm:items-center justify-center sm:h-full  max-h-screen w-full   p-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-7">
+        <div className="space-y-3">
           <h1 className="text-xl md:text-2xl lg:text-2xl px-2 font-small">About Me</h1>
-          <div className="text-sm md:text-md lg:text-lg  px-8 w-fit space-y-1">
+          <div className="text-sm md:text-md lg:text-lg  px-2 w-fit space-y-1">
           <p className={PTSans.className} >
           I&apos;m <b className="">Gilbert Fuentes</b>, a 22-year-old juggling the college hustle while diving into the tech world. Spent some time messing around with Next.js, Laravel, and Other stuff - you know, the whole website-building thing.  I&apos;ve got a soft spot for front-end and back-end tech too; it&apos;s like my digital playground. 
           </p>
@@ -24,14 +25,11 @@ const page = () => {
           </div>
          
         </div>
-
-        <Separator />
-
-        <div className=" w-full">
+        <div className="space-y-3">
           <h1 className="text-xl md:text-2xl lg:text-2xl px-2 font-small">
             Technologies
           </h1>
-          <ul className="text-sm lg:text-lg px-8  flex flex-wrap  w-fit p-5 gap-4 md:gap-14  justify-center md:justify-center">
+          <ul className="text-sm lg:text-lg  flex flex-wrap  w-fit  gap-4 md:gap-7  justify-center md:justify-center">
             <li className="p-5 shadow " ><FaHtml5 size="50" /></li>
             <li className="p-5 shadow" ><IoLogoJavascript size="50"  /></li>
             <li className="p-5 shadow" ><IoLogoCss3 size="50"  /></li>
@@ -43,9 +41,12 @@ const page = () => {
             <li className="p-5 shadow" ><SiLaravel size="50"  /></li>
           </ul>
         </div>
+        
+        </div>
+
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default page;
+export default About
