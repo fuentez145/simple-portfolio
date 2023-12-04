@@ -1,4 +1,3 @@
-import { Separator } from "@/components/ui/separator";
 
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
@@ -9,10 +8,11 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
 import { PTSans } from "@/components/fonts/google";
 import { SiLaravel } from "react-icons/si";
+import { useInView } from "framer-motion"
+const About = ( ) => {
 
-const About = () => {
   return (
-    <div id="about" className="relative w-full h-fit sm:h-fit lg:h-screen min-h-screen max-w-7xl mx-auto ">
+    <div  id="about" className="relative w-full h-fit sm:h-fit lg:h-screen min-h-screen max-w-7xl mx-auto ">
       <div className="absolute flex mt-5 sm:mt-0 sm:items-center justify-center sm:h-full  max-h-screen w-full   p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-7">
         <div className="space-y-3">
@@ -23,7 +23,7 @@ const About = () => {
           </p>
           <p className={PTSans.className}  >Beyond that, I also draw sometimes, though I&apos;ll admit, my motivation can be a bit hit or miss. And yeah, gaming is my go-to for kicking back and unwinding. </p>
           </div>
-         
+
         </div>
         <div className="space-y-3">
           <h1 className="text-xl md:text-2xl lg:text-2xl px-2 font-small">

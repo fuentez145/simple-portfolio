@@ -1,3 +1,4 @@
+'use client'
 import { motion } from "framer-motion";
 
 type Props = {
@@ -5,18 +6,20 @@ type Props = {
     className: string;
     animateFor: "DefaultVariants";
     inView? : boolean;
+    inViewOnce? : boolean;
   };
   
   const ScaleMap = {
     DefaultVariants: {
-      hidden: { opacity: 0, overflow: "hidden" , y : 50, },
+      hidden: { opacity: 0, overflow: "hidden" , scale : 0.8 },
       visible: {
+        scale : 1,
         opacity: 1,
         overflow: "visible",
         y: 0,
         transition: {
           duration: 0.6,
-          ease: "easeOut",
+          type : "spring",
   
         },
       },
@@ -24,13 +27,14 @@ type Props = {
  
   };
 
-export const ScaleAnimation = ({ children, className, animateFor , inView=false }: Props) => {
+export const ScaleAnimation = ({ children, className, animateFor , inView=false , inViewOnce=true }: Props) => {
 
     return (
         <motion.div className={className}  variants={ScaleMap[animateFor]} initial="hidden"
         {...(!inView && { animate: "visible" })}
         {...(inView && { whileInView: "visible" })}
-  
+        viewport={inView && inViewOnce ? { once: true } : {once : false}}
+
         >
             {children}
         </motion.div>

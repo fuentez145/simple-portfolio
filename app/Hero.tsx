@@ -7,6 +7,7 @@ import { Download } from "lucide-react";
 import Link from "next/link";
 import HeroTitle from "@/components/HeroTitle";
 import { FadeAnimation } from "@/components/animation/FadeAnimation";
+import { ScaleAnimation } from "@/components/animation/ScaleAnimation";
 
 const Hero = () => {
   
@@ -16,7 +17,7 @@ const Hero = () => {
         <div className="flex flex-col flex-col-reverse sm:flex-row  justify-around  w-full items-center lg:max-w-6xl sm:gap-10">
           <div className="flex-1   md:space-y-7 ">
             <FadeAnimation animateFor="LeftRevealVariants"
-          
+            inView={true}
               className={`text-sm md:text-1xl lg:text-3xl ${PTSans.className}`}
             >
               Hello, I am{" "}
@@ -26,7 +27,7 @@ const Hero = () => {
             >
               <HeroTitle />
             </h1>
-            <FadeAnimation animateFor="LeftVariants"
+            <FadeAnimation animateFor="LeftVariants" inView={true}
           
               className={`text-sm sm:text-md md:text-lg md:max-w-[87vh]   ${PTSans.className}`}
             >
@@ -41,7 +42,7 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="mb-8 sm:mb-0">
+          <ScaleAnimation animateFor="DefaultVariants" inView inViewOnce={false} className="mb-8 sm:mb-0">
             <Image
               src="/images/profile.jpg"
               priority
@@ -50,7 +51,7 @@ const Hero = () => {
               height={200}
               className="rounded-full lg:w-full "
             />
-          </div>
+          </ScaleAnimation>
         </div>
       </div>
     </div>

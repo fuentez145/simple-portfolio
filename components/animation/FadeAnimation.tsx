@@ -6,11 +6,12 @@ type Props = {
   className: string;
   animateFor: "LeftVariants" | "LeftRevealVariants";
   inView? : boolean;
+  inViewOnce? : boolean;
 };
 
 const RevealMap = {
   LeftVariants: {
-    hidden: { opacity: 0, overflow: "hidden" , y : 50, },
+    hidden: { opacity: 0, overflow: "hidden" , y : 10, },
     visible: {
       opacity: 1,
       overflow: "visible",
@@ -18,6 +19,7 @@ const RevealMap = {
       transition: {
         duration: 0.6,
         ease: "easeOut",
+       
 
       },
     },
@@ -35,7 +37,7 @@ const RevealMap = {
   },
 };
 
-export const FadeAnimation = ({ children, className, animateFor , inView=false }: Props) => {
+export const FadeAnimation = ({ children, className, animateFor , inView=false , inViewOnce=true }: Props) => {
   return (
     <motion.div
       className={className}
@@ -43,6 +45,7 @@ export const FadeAnimation = ({ children, className, animateFor , inView=false }
 
       {...(!inView && { animate: "visible" })}
       {...(inView && { whileInView: "visible" })}
+      viewport={inView && inViewOnce ? { once: true } : {once : false}}
 
       variants={RevealMap[animateFor]}
     >
