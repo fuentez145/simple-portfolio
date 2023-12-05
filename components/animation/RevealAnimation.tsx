@@ -1,6 +1,6 @@
 "use client";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { useRef , useEffect } from "react";
 
 type Props = {
   children: React.ReactNode;
@@ -45,7 +45,7 @@ const RevealAnimation = ({ children, className = "w-fit" }: Props) => {
       controls.start("visible");
       SlideControl.start("slidevisible");
     } 
-  }, [inView]);
+  }, [inView, controls, SlideControl]);
 
   return (
     <div
