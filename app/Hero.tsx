@@ -47,7 +47,7 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <RevealAnimation>
+          <ScaleAnimation animateFor="DefaultVariants" inView inViewOnce={false} className="mb-8 sm:mb-0">
             <Image
               src="/images/profile.jpg"
               priority
@@ -56,7 +56,7 @@ const Hero = () => {
               height={200}
               className="rounded-full lg:w-full "
             />
-          </RevealAnimation>
+          </ScaleAnimation>
         </div>
       </div>
     </div>
