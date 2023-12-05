@@ -8,37 +8,45 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
 import { PTSans } from "@/components/fonts/google";
 import { SiLaravel } from "react-icons/si";
-import { useInView } from "framer-motion"
+
+import RevealAnimation from "@/components/animation/RevealAnimation";
+
 const About = ( ) => {
 
+
   return (
-    <div  id="about" className="relative w-full h-fit sm:h-fit lg:h-screen min-h-screen max-w-7xl mx-auto ">
+    <div id="about" className="relative w-full h-fit sm:h-fit lg:h-screen min-h-screen max-w-7xl mx-auto ">
       <div className="absolute flex mt-5 sm:mt-0 sm:items-center justify-center sm:h-full  max-h-screen w-full   p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-7">
         <div className="space-y-3">
-          <h1 className="text-xl md:text-2xl lg:text-2xl px-2 font-small">About Me</h1>
+        <h1 className="text-xl md:text-2xl lg:text-2xl px-2 font-small ">About Me</h1>
           <div className="text-sm md:text-md lg:text-lg  px-2 w-fit space-y-1">
+
+          <RevealAnimation className="">
           <p className={PTSans.className} >
           I&apos;m <b className="">Gilbert Fuentes</b>, a 22-year-old juggling the college hustle while diving into the tech world. Spent some time messing around with Next.js, Laravel, and Other stuff - you know, the whole website-building thing.  I&apos;ve got a soft spot for front-end and back-end tech too; it&apos;s like my digital playground. 
-          </p>
+          </p>      
+          </RevealAnimation>
+          <RevealAnimation className="">
           <p className={PTSans.className}  >Beyond that, I also draw sometimes, though I&apos;ll admit, my motivation can be a bit hit or miss. And yeah, gaming is my go-to for kicking back and unwinding. </p>
+          </RevealAnimation>
           </div>
-
+         
         </div>
         <div className="space-y-3">
           <h1 className="text-xl md:text-2xl lg:text-2xl px-2 font-small">
             Technologies
           </h1>
           <ul className="text-sm lg:text-lg  flex flex-wrap  w-fit  gap-4 md:gap-7  justify-center md:justify-center">
-            <li className="p-5 shadow " ><FaHtml5 size="50" /></li>
-            <li className="p-5 shadow" ><IoLogoJavascript size="50"  /></li>
-            <li className="p-5 shadow" ><IoLogoCss3 size="50"  /></li>
-            <li className="p-5 shadow" ><SiPhp size="50"  /></li>
-            <li className="p-5 shadow" ><RiReactjsFill size="50"  /></li>
-            <li className="p-5 shadow" ><TbBrandNextjs size="50"  /></li>
-            <li className="p-5 shadow" ><IoLogoNodejs size="50"  /></li>
-            <li className="p-5 shadow" ><SiMysql size="50"  /></li>
-            <li className="p-5 shadow" ><SiLaravel size="50"  /></li>
+            <RevealAnimation><li className="p-5 shadow " ><FaHtml5 size="50" /></li></RevealAnimation>
+             <RevealAnimation><li className="p-5 shadow" ><IoLogoJavascript size="50"  /></li></RevealAnimation>
+             <RevealAnimation><li className="p-5 shadow" ><IoLogoCss3 size="50"  /></li></RevealAnimation>
+             <RevealAnimation><li className="p-5 shadow" ><SiPhp size="50"  /></li></RevealAnimation>
+             <RevealAnimation><li className="p-5 shadow" ><RiReactjsFill size="50"  /></li></RevealAnimation>
+             <RevealAnimation><li className="p-5 shadow" ><TbBrandNextjs size="50"  /></li></RevealAnimation>
+             <RevealAnimation><li className="p-5 shadow" ><IoLogoNodejs size="50"  /></li></RevealAnimation>
+             <RevealAnimation><li className="p-5 shadow" ><SiMysql size="50"  /></li></RevealAnimation>
+             <RevealAnimation><li className="p-5 shadow" ><SiLaravel size="50"  /></li></RevealAnimation>
           </ul>
         </div>
         

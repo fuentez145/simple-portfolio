@@ -1,6 +1,7 @@
 import React from "react";
 import { project } from "@/components/data/projects";
 import Image from "next/image";
+import RevealAnimation from "@/components/animation/RevealAnimation";
 
 const Project = () => {
     const projects = project;
@@ -13,10 +14,12 @@ const Project = () => {
       <div className=" columns-1 md:columns-2 lg:columns-3 space-y-3 gap-8  px-2 pb-20 md:pb-8 lg:pb-2 mt-2 ">
           {
             projects.map((project, index) => (
+              <RevealAnimation key={index} className="w-fit" >
               <div key={index} className="relative">
                 <Image alt={project?.title} priority key={index} src={project?.image} className="object-cover w-full  shadow h-auto rounded-xl  shadow cursor-pointer" width={300} height={40} />
                 <p className="absolute bottom-0 left-0 p-2 text-accent-foreground  bg-gradient-to-r from-accent  w-full">{project?.title}</p>
               </div>
+              </RevealAnimation>
             ))
           }
       </div>

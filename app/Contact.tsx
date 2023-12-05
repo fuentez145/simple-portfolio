@@ -8,6 +8,7 @@ import { FaFacebookMessenger } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Mail } from 'lucide-react';
 import Link from "next/link";
+import RevealAnimation from "@/components/animation/RevealAnimation";
 
 const Contact = () => {
   return (
@@ -23,12 +24,13 @@ const Contact = () => {
               </Button>
             </li>
             <li className="w-full">
-              <Button variant="outline"  asChild>
+             <Button variant="outline"  asChild>
                 <Link className="w-full" href="#">
                   <FaFacebookMessenger size="20" />
                 </Link>
               </Button>
             </li>
+            
             <li className="w-full">
               <Button variant="outline"    asChild>
                 <Link className="w-full" href="#">
@@ -36,6 +38,7 @@ const Contact = () => {
                 </Link>
               </Button>
             </li>
+
             <li className="w-full">
               <Button variant="outline" asChild>
                 <Link className="w-full" href="mailto:gilbertfuentes2001@gmail.com">
@@ -45,8 +48,11 @@ const Contact = () => {
             </li>
           </ul>
           <div className="flex flex-col w-full items-center justify-center">
-            <h1 className="text-3xl mb-2">Let&apos;s Connect </h1>
+              <h1 className="text-3xl mb-2">Let&apos;s Connect </h1>
+
+            <RevealAnimation>
             <p className="text-sm p-5">I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!</p>
+            </RevealAnimation>
             <Separator />
             <div className="w-full px-5 mt-8 space-y-5 ">
               <div>

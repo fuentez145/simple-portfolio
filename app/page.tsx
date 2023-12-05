@@ -5,6 +5,7 @@ import { Separator } from '@/components/ui/separator'
 import About from './About'
 import Project from './Project'
 import Contact from './Contact'
+import { AnimateTest } from '@/components/AnimationTest'
 
 
 
