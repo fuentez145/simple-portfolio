@@ -8,6 +8,9 @@ import { Send } from 'lucide-react';
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { Button } from "@/components/ui/button";
+import MobileNavBar from "./MobileNavBar";
+import NavDeskAnimation from "./animation/NavDeskAnimation";
+
 
 
 const CurrentPathnameStyle = (selectedpath : string ) => {
@@ -28,7 +31,8 @@ const NavBar = () => {
   return (
     <div className="sticky top-0  max-w-7xl mx-auto w-full z-50">
       <div className="flex justify-center  md:justify-end items-center p-2 ">
-      <ul className="inline-flex backdrop-blur-sm bg-accent/30  p-2 rounded-full">
+      <NavDeskAnimation>
+      <ul className="hidden sm:inline-flex backdrop-blur-sm bg-accent/30  p-2 rounded-full">
         <li>
             <Button size="lg" variant="outline" className="border-none rounded-full" asChild>
           <Link href="/#">
@@ -78,8 +82,15 @@ const NavBar = () => {
   
         </li>
         
+      
         
       </ul>
+      </NavDeskAnimation>
+
+      <MobileNavBar />
+
+
+
       </div>
       
     </div>
