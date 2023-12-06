@@ -11,6 +11,47 @@ import { SiLaravel } from "react-icons/si";
 
 import RevealAnimation from "@/components/animation/RevealAnimation";
 
+
+const technologies = [
+  {
+    name: "HTML5",
+    icon: <FaHtml5 size="50" />,
+  },
+  {
+    name: "CSS3",
+    icon: <IoLogoCss3 size="50" />,
+  },
+  {
+    name: "Javascript",
+    icon: <IoLogoJavascript size="50" />,
+  },
+  {
+    name: "NodeJS",
+    icon: <IoLogoNodejs size="50" />,
+  },
+  {
+    name: "PHP",
+    icon: <SiPhp size="50" />,
+  },
+  {
+    name: "ReactJS",
+    icon: <RiReactjsFill size="50" />,
+  },
+  {
+    name: "NextJS",
+    icon: <TbBrandNextjs size="50" />,
+  },
+  {
+    name: "MySQL",
+    icon: <SiMysql size="50" />,
+  },
+  {
+    name: "Laravel",
+    icon: <SiLaravel size="50" />,
+  },
+
+]
+
 const About = ( ) => {
 
 
@@ -38,7 +79,7 @@ const About = ( ) => {
             Technologies
           </h1>
           <ul className="text-sm lg:text-lg  flex flex-wrap  w-fit  gap-4 md:gap-7  justify-center md:justify-center">
-            <RevealAnimation><li className="p-5 shadow " ><FaHtml5 size="50" /></li></RevealAnimation>
+            {/* <RevealAnimation><li className="p-5 shadow " ><FaHtml5 size="50" /></li></RevealAnimation>
              <RevealAnimation><li className="p-5 shadow" ><IoLogoJavascript size="50"  /></li></RevealAnimation>
              <RevealAnimation><li className="p-5 shadow" ><IoLogoCss3 size="50"  /></li></RevealAnimation>
              <RevealAnimation><li className="p-5 shadow" ><SiPhp size="50"  /></li></RevealAnimation>
@@ -46,7 +87,18 @@ const About = ( ) => {
              <RevealAnimation><li className="p-5 shadow" ><TbBrandNextjs size="50"  /></li></RevealAnimation>
              <RevealAnimation><li className="p-5 shadow" ><IoLogoNodejs size="50"  /></li></RevealAnimation>
              <RevealAnimation><li className="p-5 shadow" ><SiMysql size="50"  /></li></RevealAnimation>
-             <RevealAnimation><li className="p-5 shadow" ><SiLaravel size="50"  /></li></RevealAnimation>
+             <RevealAnimation><li className="p-5 shadow" ><SiLaravel size="50"  /></li></RevealAnimation> */}
+
+              {
+                technologies.map((item , index) => (
+                
+                  <RevealAnimation key={index}>
+                    <li className="p-5 shadow" >{item.icon}</li>
+                    </RevealAnimation>
+               
+                ))
+              }
+
           </ul>
         </div>
         

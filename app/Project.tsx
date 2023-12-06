@@ -1,4 +1,3 @@
-import React from "react";
 import { project } from "@/components/data/projects";
 import Image from "next/image";
 import RevealAnimation from "@/components/animation/RevealAnimation";
