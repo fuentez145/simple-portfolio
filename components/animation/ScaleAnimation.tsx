@@ -40,4 +40,13 @@ export const ScaleAnimation = ({ children, className, animateFor , inView=false 
         </motion.div>
     )
 
+    
+}
+
+export const ScaleHover = ({ children } : {children : React.ReactNode}) => {
+    return (
+        <motion.div whileHover={{ scale: 0.95 }}   whileTap={{ scale: 1.0 }}>
+            {children}
+        </motion.div>
+    )
 }
