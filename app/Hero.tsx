@@ -28,14 +28,24 @@ const Hero = () => {
               <HeroTitle />
             </h1>
             <RevealAnimation>
-              <div
+              {/* <div
                 className={`text-sm sm:text-md md:text-lg md:max-w-[87vh]  py-2 ${PTSans.className}`}
               >
                 I am a Web developer with backend and frontend development
                 knowledge, currently focusing on mastering React and NextJS. I
                 am based in Cebu, Philippines. I am a self-taught developer with
                 a bachelor&apos;s degree in information technology.
+              </div> */}
+
+              <div
+                className={`text-sm sm:text-md md:text-lg md:max-w-[87vh]  py-2 ${PTSans.className}`}
+              >
+                I am a Web developer with backend and frontend development
+                knowledge, currently focusing on mastering React and NextJS. I
+                am based in Cebu, Philippines. I am a self-taught developer and currently pursuing
+                a bachelor&apos;s degree in information technology.
               </div>
+
             </RevealAnimation>
             <div className=" space-x-3 mt-2 flex justify-center sm:justify-start">
               <Button asChild variant="outline">
