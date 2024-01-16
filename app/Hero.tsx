@@ -51,8 +51,10 @@ const Hero = () => {
               <Button asChild variant="outline">
                 <Link href="/contact">Contact Me</Link>
               </Button>
-              <Button variant="outline">
-                <Download strokeWidth={1} /> Download CV
+              <Button  variant="outline">
+                
+                <Link href="/file/Resume%20-%20Fuentes%2C%20Gilbert.pdf" className="flex gap-1 items-center" target="_blank"><Download strokeWidth={1} /> Download CV</Link>
+                
               </Button>
             </div>
           </div>
