@@ -23,9 +23,9 @@ const Experience = () => {
     <div id="project" className=" min-h-screen w-full ">
       <div className="w-full max-w-6xl  mx-auto ">
         <h1 className="text-4xl font-semibold text-center p-6">PROJECTS</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-2 gap-2 mt-2 auto-cols-min">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-2 gap-2 mt-2 auto-cols-min mb-5">
           {projects.map((project, index) => (
-            <Card key={index}>
+            <Card key={index} className="bg-slate-50">
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
                 <div className="space-x-1">
@@ -36,7 +36,7 @@ const Experience = () => {
 
                 <CardDescription>{project.description}</CardDescription>
               </CardHeader>
-              <CardContent >
+              <CardContent className="" >
                 {/* <p>Card Content</p> */}
 
                <RevealAnimation>
@@ -44,12 +44,12 @@ const Experience = () => {
                   priority
                   alt="this"
                   src={project.image}
-                  className="object-cover  h-[200px] md:h-[400px]"
+                  className="object-cover border rounded-md h-[200px] md:h-[400px]"
                   width={500}
                   height={400}
                 />
                </RevealAnimation>
-              </CardContent>
+              </CardContent >
               <CardFooter>
                 <Button
                   className="w-full  "

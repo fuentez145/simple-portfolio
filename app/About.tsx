@@ -61,8 +61,8 @@ const About = ( ) => {
 
 
   return (
-    <div id="about" className="relative w-full h-fit sm:h-fit lg:h-screen min-h-screen max-w-7xl mx-auto ">
-      <div className="absolute flex mt-5 sm:mt-0 sm:items-center justify-center sm:h-full  max-h-screen w-full   p-10">
+    <div id="about" className=" w-full h-fit sm:h-fit lg:h-screen min-h-screen max-w-7xl mx-auto ">
+      <div className=" flex mt-5 sm:mt-0 sm:items-center justify-center sm:h-full min-h-screen  w-full   p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-7">
         <div className="space-y-3">
         <h1 className="text-xl md:text-2xl lg:text-2xl px-2 font-small ">About Me</h1>
