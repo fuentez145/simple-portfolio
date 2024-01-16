@@ -58,7 +58,7 @@ const Experience = () => {
                 >
                   <Link
                     target="_blank"
-                    className="flex gap-1"
+                    className="flex gap-1 w-full items-center justify-center"
                     href={project.link}
                   >
                     View Project
