@@ -7,6 +7,7 @@ import { Github } from "lucide-react";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Mail } from 'lucide-react';
+
 import Link from "next/link";
 import RevealAnimation from "@/components/animation/RevealAnimation";
 
@@ -54,24 +55,28 @@ const Contact = () => {
             <p className="text-sm p-5">I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!</p>
             </RevealAnimation>
             <Separator />
-            <div className="w-full px-5 mt-8 space-y-5 ">
+            <div className="relative w-full px-5 mt-8 space-y-5 ">
+              {/* <div className="absolute w-full h-full flex items-center justify-center">
+                <h2 className="text-5xl md:text-6xl font-bold text-gray-500 cursor-not-allowed">DISABLED</h2>
+              </div> */}
               <div>
                 <Label htmlFor="email">Your Email Address</Label>
-                <Input
+                <Input 
                   id="email"
                   type="email"
                   placeholder="E.g xxxx@gmail.com"
+                  disabled
                 />
               </div>
               <div>
                 <Label htmlFor="subject">Subject</Label>
-                <Input id="subject" type="text" placeholder="Hello..." />
+                <Input  id="subject" type="text" placeholder="Hello..."  disabled/>
               </div>
               <div>
                 <Label htmlFor="message">Message</Label>
-                <Textarea id="message" placeholder="Let's talk about.." />
+                <Textarea id="message" placeholder="Let's talk about.." disabled />
               </div>
-              <Button className="w-full" >Send message</Button>
+              <Button className="w-full" disabled>Send message</Button>
             </div>
           </div>
         </div>

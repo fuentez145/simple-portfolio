@@ -3,6 +3,7 @@ import { Separator } from '@/components/ui/separator'
 import About from './About'
 import Project from './Project'
 import Contact from './Contact'
+import Experience from '@/components/Experience'
 
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
      <Separator /> 
      <About  />
      <Separator />
-     <Project />
+     {/* <Project /> */}
+     <Experience />
       <Separator />
       <Contact />
     </main>

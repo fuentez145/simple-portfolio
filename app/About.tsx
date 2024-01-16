@@ -8,6 +8,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
 import { PTSans } from "@/components/fonts/google";
 import { SiLaravel } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
 
 import RevealAnimation from "@/components/animation/RevealAnimation";
 
@@ -48,6 +49,10 @@ const technologies = [
   {
     name: "Laravel",
     icon: <SiLaravel size="50" />,
+  },
+  {
+    name: "TailwindCSS",
+    icon: <SiTailwindcss size="50" />,
   },
 
 ]
