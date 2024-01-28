@@ -9,11 +9,11 @@ export const project = [
         image: "/images/ctuforumsystem.png",
     },
     {
-        title: "Project Title 2",
+        title: "Roblox Clothes Downloader",
         framework : [
-            "None"
+            "A Roblox Clothes Downloader"
         ],
-        description: "Project Description",
+        description: "A roblox clothes downloader that can download any roblox classic clothes asset with template changer .",
         link: "#",
         image: "/images/3.jpg",
     },
