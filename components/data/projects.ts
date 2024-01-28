@@ -11,11 +11,11 @@ export const project = [
     {
         title: "Roblox Clothes Downloader",
         framework : [
-            "A Roblox Clothes Downloader"
+            "TypeScript", "Next.js","TailwindCSS"
         ],
         description: "A roblox clothes downloader that can download any roblox classic clothes asset with template changer .",
-        link: "#",
-        image: "/images/3.jpg",
+        link: "https://rblx-clothes-9kp9p.ondigitalocean.app/",
+        image: "/images/robloxasset.png",
     },
   
 ]
