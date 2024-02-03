@@ -49,7 +49,7 @@ const Hero = () => {
             </RevealAnimation>
             <div className=" space-x-3 mt-2 flex justify-center sm:justify-start">
               <Button asChild variant="outline">
-                <Link href="/contact">Contact Me</Link>
+                <Link href="#contact">Contact Me</Link>
               </Button>
               <Button  variant="outline">
                 
@@ -60,7 +60,7 @@ const Hero = () => {
           </div>
           <ScaleAnimation animateFor="DefaultVariants" inView inViewOnce={false} className="mb-8 sm:mb-0">
             <Image
-              src="/images/profile.jpg"
+              src="/images/profile1.jpg"
               priority
               alt="My Profile"
               width={300}
