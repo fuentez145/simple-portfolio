@@ -5,7 +5,8 @@ export const project = [
             "PHP","Laravel","Bootstrap","JavaScript","MySQL"
         ],
         description: "CTU Forum System is an online forum system for students and teachers of CTU-Danao. Features different role of users, such as admin, moderator and user.",
-        link: "https://ctuforum.live",
+        // link: "https://ctuforum.live",
+        link: "#",
         image: "/images/ctuforumsystem.png",
     },
     {
@@ -14,8 +15,10 @@ export const project = [
             "TypeScript", "Next.js","TailwindCSS"
         ],
         description: "A roblox clothes downloader that can download any roblox classic clothes asset with template changer .",
-        link: "https://rblx-clothes-9kp9p.ondigitalocean.app/",
+        // link: "https://rblx-clothes-9kp9p.ondigitalocean.app/",
+        link: "#",
         image: "/images/robloxasset.png",
     },
+    
   
 ]

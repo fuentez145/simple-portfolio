@@ -40,10 +40,7 @@ const Hero = () => {
               <div
                 className={`text-sm sm:text-md md:text-lg md:max-w-[87vh]  py-2 ${PTSans.className}`}
               >
-                I am a Web developer with backend and frontend development
-                knowledge, currently focusing on mastering React and NextJS. I
-                am based in Cebu, Philippines. I am a self-taught developer and currently pursuing
-                a bachelor&apos;s degree in information technology.
+              <span className="text-blue-500 ">Self-taught software developer</span>, continuously learning and focused on <span className="font-bold">building web applications</span>.
               </div>
 
             </RevealAnimation>
