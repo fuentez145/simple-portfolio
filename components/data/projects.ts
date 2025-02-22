@@ -6,7 +6,7 @@ export const project = [
         ],
         description: "CTU Forum System is an online forum system for students and teachers of CTU-Danao. Features different role of users, such as admin, moderator and user.",
         // link: "https://ctuforum.live",
-        link: "#",
+        link: "https://vps-c2500eb3.vps.ovh.ca/",
         image: "/images/ctuforumsystem.png",
     },
     {
