@@ -34,7 +34,7 @@ const Contact = () => {
             
             <li className="w-full">
               <Button variant="outline"    asChild>
-                <Link className="w-full" href="#">
+                <Link className="w-full" target="_blank" href="http://www.linkedin.com/in/gilbert-fuentes-b5563a313">
                   <FaLinkedin size="20" />
                 </Link>
               </Button>
